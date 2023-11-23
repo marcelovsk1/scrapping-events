@@ -16,6 +16,13 @@
       "eventDate": "Annually in November",
       "eventDescription": "Mundial Montreal showcases the diversity that defines our society. Canada is a country of immigrants - living on Indigenous land. We want you to experience a mosaic of cultures, united through music. Discover new sounds, engage in meaningful conversations, dance! The music world is meeting in Montreal.",
       "imageURL": "http://www.go-montreal.com/images/attractions/listings/festivals-events/mundial-mtl.jpg"
+    },
+
+    {
+      "eventTitle": "M for Montreal",
+      "eventDate": "Annually in November",
+      "eventDescription": "From November 16-19, M for Montreal will showcase more than a hundred local and international buzz-worthy bands in over 20 venues across the city. Over 200 industry heavyweights from 15+ countries, tastemakers and music aficionados will take over Montreal for 4 days overflowing with incredible music, business opportunities and an overload of fun!",
+      "imageURL": "http://www.go-montreal.com/images/attractions/listings/festivals-events/mformontreal.jpg"
     }
   ]
 }
