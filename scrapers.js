@@ -11,7 +11,7 @@ async function scrapeProduct(url) {
   const txt = await el.getProperty('textContent');
   const webPage = await txt.jsonValue();
 
-  const [el1] = await page.$x('//*[@id="all"]/li[7]/div[2]/div[2]/h4/a');
+  const [el1] = await page.$x('//*[@id="all"]/li[8]/div[2]/div[2]/h4/a');
   const txt1 = await el1.getProperty('textContent');
   const eventTitle = await txt1.jsonValue();
 
@@ -19,11 +19,11 @@ async function scrapeProduct(url) {
   const txt2 = await el2.getProperty('textContent');
   const eventDate = await txt2.jsonValue();
 
-  const [el3] = await page.$x('//*[@id="all"]/li[7]/div[2]/div[2]/p/text()');
+  const [el3] = await page.$x('//*[@id="all"]/li[8]/div[2]/div[2]/p/text()');
   const txt3 = await el3.getProperty('textContent');
   const eventDescription = await txt3.jsonValue();
 
-  const [el4] = await page.$x('//*[@id="all"]/li[7]/div[1]/a/img');
+  const [el4] = await page.$x('//*[@id="all"]/li[8]/div[1]/a/img');
   const src = await el4.getProperty('src');
   const imageURL = await src.jsonValue();
 
