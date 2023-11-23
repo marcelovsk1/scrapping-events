@@ -15,7 +15,7 @@ async function scrapeProduct(url) {
   const txt1 = await el1.getProperty('textContent');
   const eventTitle = await txt1.jsonValue();
 
-  const [el2] = await page.$x('//*[@id="hero"]/div/div/h1/span');
+  const [el2] = await page.$x('//*[@id="all"]/li[7]/div[2]/div[1]/div/div');
   const txt2 = await el2.getProperty('textContent');
   const eventDate = await txt2.jsonValue();
 
