@@ -11,19 +11,23 @@ async function scrapeProduct(url) {
   const txt = await el.getProperty('textContent');
   const webPage = await txt.jsonValue();
 
-  const [el1] = await page.$x('//*[@id="all"]/li[16]/div[2]/div[2]/h4/a');
+  const [el1] = await page.$x('//*[@id="all"]/li[7]/div[2]/div[2]/h4/a');
   const txt1 = await el1.getProperty('textContent');
   const eventTitle = await txt1.jsonValue();
 
-  const [el2] = await page.$x('//*[@id="all"]/li[4]/div[2]/div[2]/p/text()');
+  const [el2] = await page.$x('//*[@id="hero"]/div/div/h1/span');
   const txt2 = await el2.getProperty('textContent');
-  const eventDescription = await txt2.jsonValue();
+  const eventDate = await txt2.jsonValue();
 
-  const [el3] = await page.$x('//*[@id="all"]/li[16]/div[1]/a/img');
-  const src = await el3.getProperty('src');
+  const [el3] = await page.$x('//*[@id="all"]/li[7]/div[2]/div[2]/p/text()');
+  const txt3 = await el3.getProperty('textContent');
+  const eventDescription = await txt3.jsonValue();
+
+  const [el4] = await page.$x('//*[@id="all"]/li[7]/div[1]/a/img');
+  const src = await el4.getProperty('src');
   const imageURL = await src.jsonValue();
 
-  console.log({webPage, eventTitle, eventDescription, imageURL});
+  console.log({webPage, eventTitle, eventDate, eventDescription, imageURL});
 
   browser.close();
 
