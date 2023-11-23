@@ -3,17 +3,16 @@
     {
       "webPage": "Montreal November Festivals & Events",
       "eventTitle": "MTLÀTABLE",
+      "eventDate": "Annually in November",
       "eventDescription": "MTLàTABLE is the best excuse to gather around the table with loved ones to celebrate the best Montréal’s culinary scene has to offer.",
       "imageURL": "http://www.go-montreal.com/images/featured/mtl-a-table-1-lg.jpg"
     },
 
     {
-        "webPage": "Montreal November Festivals & Events",
-        "eventTitle": "Mundial Montreal",
-        "eventDate": "Annually in November",
-        "eventDescription": "Mundial Montreal showcases the diversity that defines our society. Canada is a country of immigrants - living on Indigenous land. We want you to experience a mosaic of cultures, united through music. Discover new sounds, engage in meaningful conversations, dance! The music world is meeting in Montreal.",
-        "imageURL": "http://www.go-montreal.com/images/attractions/listings/festivals-events/mundial-mtl.jpg"
-
+      "webPage": "Montreal November Festivals & Events",
+      "eventTitle": "Mundial Montreal",
+      "eventDate": "Annually in November",
+      "eventDescription": "Mundial Montreal showcases the diversity that defines our society. Canada is a country of immigrants - living on Indigenous land. We want you to experience a mosaic of cultures, united through music. Discover new sounds, engage in meaningful conversations, dance! The music world is meeting in Montreal.",        "imageURL": "http://www.go-montreal.com/images/attractions/listings/festivals-events/mundial-mtl.jpg"
     }
   ]
 }
