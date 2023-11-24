@@ -11,7 +11,7 @@ async function scrapeProduct(url) {
   // const txt = await el.getProperty('textContent');
   // const webPage = await txt.jsonValue();
 
-  const [el] = await page.$x('//*[@id="event_list"]/div[2]/ul/div[1]/li[9]/div[4]/div/div[2]/div/div/a/h3');
+  const [el] = await page.$x('//*[@id="all"]/li[3]/div[2]/div[2]/h4/a');
   const txt = await el.getProperty('textContent');
   const eventTitle = await txt.jsonValue();
 
@@ -19,7 +19,7 @@ async function scrapeProduct(url) {
   // const txt1 = await el1.getProperty('textContent');
   // const eventDescription = await txt1.jsonValue();
 
-  const [el2] = await page.$x('//*[@id="event_list"]/div[2]/ul/div[1]/li[9]/div[3]/img');
+  const [el2] = await page.$x('/html/body/section[1]/div/div[1]/div[2]/div/figure/img');
   const src = await el2.getProperty('src');
   const imageURL = await src.jsonValue();
 
@@ -29,4 +29,4 @@ async function scrapeProduct(url) {
 
 };
 
-scrapeProduct('https://allevents.in/montreal/sports?ref=cityhome-category-box-new');
+scrapeProduct('http://www.go-montreal.com/attraction_events_nov.htm');
